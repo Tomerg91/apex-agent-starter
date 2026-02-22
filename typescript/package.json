@@ -1,0 +1,23 @@
+{
+  "name": "apex-agent-starter",
+  "version": "1.0.0",
+  "description": "Starter code for building AI agents that play Apex Capital",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc && node dist/index.js",
+    "strategy:climber": "tsc && node dist/strategies/steady-climber.js",
+    "strategy:sniper": "tsc && node dist/strategies/throne-sniper.js",
+    "strategy:billboard": "tsc && node dist/strategies/billboard-optimizer.js"
+  },
+  "keywords": ["apex-capital", "ai-agent", "game-bot", "leaderboard"],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
